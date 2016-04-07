@@ -3,11 +3,10 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
-using TheModulatorServerCommon;
 
-namespace Module1
+namespace TheModulatorServerCommon
 {
-    public class Class1 : Module
+    public class SimpleModule : Module
     {
     }
 }

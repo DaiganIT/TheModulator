@@ -19,14 +19,17 @@
                 </tr>
             </thead>
             <tbody>
+            @foreach (var m in Model)
+            {
                 <tr>
-                    <td></td>
+                    <td>@m.ModuleName</td>
                     <td></td>
                     <td></td>
                     <td></td>
                     <td></td>
                     <td></td>
                 </tr>
+            }
             </tbody>
         </table>
     </div>

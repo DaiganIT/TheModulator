@@ -80,7 +80,10 @@ namespace TheModulator.App_Start
 
                 try
                 {
-                    Assembly.LoadFile(dllFilePath);
+                    foreach (string dll in Directory.GetFiles(dir, "*.dll"))
+                    {
+                        Assembly.LoadFile(dll);
+                    }
                 }
                 catch (Exception e)
                 {
